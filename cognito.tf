@@ -13,7 +13,8 @@ resource "aws_cognito_user_pool" "main" {
     }
   }
 
-  alias_attributes         = ["phone_number", "email"]
+  username_attributes = ["email", "phone_number"]
+
   auto_verified_attributes = [/*"phone_number",*/ "email"]
 
   //  deletion_protection = "INACTIVE"
