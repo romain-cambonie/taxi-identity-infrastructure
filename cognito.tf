@@ -24,8 +24,16 @@ resource "aws_cognito_user_pool" "main" {
   //   device_only_remembered_on_user_prompt = false
   // }
 
+  #email_configuration {
+  #  email_sending_account = "COGNITO_DEFAULT"
+  #}
+
   email_configuration {
-    email_sending_account = "COGNITO_DEFAULT"
+    #email_sending_account = "DEVELOPER"
+    #source_arn = "ARN of the SES verified email identity to use."
+    configuration_set      = "project_configuration_set"
+    from_email_address     = "taxi-gestion Identity Service <identity+noreply@taxi-gestion.com>"
+    reply_to_email_address = "taxi-gestion Support Service <support@taxi-gestion.com>"
   }
 
   //  sms_authentication_message = "Votre code d'authentification est {####}"
