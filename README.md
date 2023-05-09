@@ -1,5 +1,7 @@
 # Identity infrastructure
 
+> Ce dépot est obsolète. Le projet Taxi Gestion est hébergé sur son [organisation dédiée](https://github.com/taxi-gestion)
+
 ## À propos
 
 Identity infrastructure décrit par le code l'infrastructure à provisionner pour l'authentification dans le produit Taxi Aymeric
